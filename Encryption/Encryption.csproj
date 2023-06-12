@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>ZhiYun.Encryption</Title>
+    <Version>1.0.0</Version>
+    <Authors>$(Authors)</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>Encryption.md</PackageReadmeFile>
+    <PackageId>ZhiYun.$(AssemblyName)</PackageId>
+    <Company>ZhiYun.$(Authors)</Company>
+    <Product>ZhiYun.$(AssemblyName)</Product>
+    <Description>base64、md5、sha256 加密算法</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Encryption.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
